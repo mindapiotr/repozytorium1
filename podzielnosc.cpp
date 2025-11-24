@@ -2,6 +2,15 @@
 
 using namespace std;
 
+int nwd(int a, int b) {
+    while (b != 0) {
+        int temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
+
 int main() {
     int a, b;
     cin >> a >> b;
@@ -11,7 +20,6 @@ int main() {
         cout << "Liczby musza byc dodatnie!" << endl;
         return 0;
     }
-
-    cout << a << " " << b << endl;
+    cout << a << " " << b << " " << nwd(a, b) << endl;
     return 0;
 }
