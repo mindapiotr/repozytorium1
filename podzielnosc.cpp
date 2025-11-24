@@ -14,6 +14,15 @@ int nwd(int a, int b) {
 int main() {
     int a, b;
     cin >> a >> b;
+<<<<<<< HEAD
+=======
+
+    // Dodane sprawdzanie
+    if (a <= 0 || b <= 0) {
+        cout << "Liczby musza byc dodatnie!" << endl;
+        return 0;
+    }
+>>>>>>> sprawdzanie
     cout << a << " " << b << " " << nwd(a, b) << endl;
     return 0;
 }
